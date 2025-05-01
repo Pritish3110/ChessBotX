@@ -34,22 +34,22 @@ How It Works
 
 Structure:
 
-/hardware      → ESP32 firmware (Arduino)
-/software      → Python GUI + assets
-README.md      → This file
+    /hardware      → ESP32 firmware (Arduino)
+    /software      → Python GUI + assets
+    README.md      → This file
 
 
 Setup:
 
-Flash ESP32 using Arduino IDE.
-Connect ESP32 via USB.
-Run GUI:
+    Flash ESP32 using Arduino IDE.
+    Connect ESP32 via USB.
+    Run GUI:
 
-pip install pygame pyserial numpy
-python3 virtual_chess.py
+    pip install pygame pyserial numpy
+    python3 virtual_chess.py
 
 
 Future Ideas:
 
-AI integration (e.g., Stockfish)
-Move logging & highlighting
+    AI integration (e.g., Stockfish)
+    Move logging & highlighting
