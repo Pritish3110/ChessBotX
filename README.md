@@ -1,4 +1,4 @@
-♟️ Smart Chessboard - Physical to Virtual Sync
+♟️ ChessBotX - Physical to Virtual Sync
 
 
 
@@ -27,20 +27,25 @@ Software: Python + Pygame GUI renders the board, updates piece positions via ser
 
 🛠️ Tech Stack
 
-<table>
-<tr>
-<td align="center"><b>🔧 Hardware</b></td>
-<td align="center"><b>💻 Software</b></td>
-</tr>
-<tr>
-<td>ESP32 (C++)</td>
-<td>Python 3 + PySerial + NumPy</td>
-</tr>
-<tr>
-<td>Arduino IDE</td>
-<td>Pygame (for GUI)</td>
-</tr>
-</table>
+
+Hardware Components
+
+
+ESP32 (C++) - Main microcontroller
+Acrylic Sheet - Board base and structure
+4148 Diodes - Signal protection and isolation
+Motion Sensors - PIR/ultrasonic sensors for piece detection
+Electromagnets - Piece positioning feedback
+GPIO Matrix - 8x8 sensor array
+
+
+Software Stack
+
+
+Python 3 + PySerial + NumPy
+Pygame (for GUI)
+Arduino IDE for ESP32 programming
+
 
 
 ✨ Features
@@ -65,16 +70,18 @@ Python reads matrix, detects movement, updates the GUI
 📁 Project Structure
 
 
-smart-chessboard/
-├── 🔧 hardware/          # ESP32 firmware (Arduino)
-│   ├── chessboard.ino    # Main ESP32 sketch
-│   └── config.h          # Hardware configuration
-├── 💻 software/          # Python GUI + assets
-│   ├── virtual_chess.py  # Main GUI application
-│   └── assets/           # Chess piece sprites
-├── 📚 docs/              # Documentation
-├── README.md             # This file
-└── requirements.txt      # Python dependencies
+ChessBotX/
+│
+├── hardware/
+│   └── chessboard_scanner.ino    # ESP32 code for board scanning
+│
+├── software/
+│   ├── virtual_chess.py          # Main GUI application
+│   └── chess_simulator.py        # Chess game simulator
+│
+├── requirements.txt
+├── LICENSE
+└── README.md
 
 
 
@@ -85,18 +92,25 @@ smart-chessboard/
 Hardware Setup
 
 
-Flash ESP32 using Arduino IDE
+Flash ESP32 using Arduino IDE with hardware/chessboard_scanner.ino
 Connect ESP32 via USB
 
 
 Software Setup
 
 
+# Clone repository
+git clone https://github.com/Pritish3110/ChessBotX.git
+cd ChessBotX
+
 # Install dependencies
 pip install pygame pyserial numpy
 
-# Run GUI
+# Run main application
 python3 software/virtual_chess.py
+
+# Or run chess simulator (software only)
+python3 software/chess_simulator.py
 
 
 
@@ -144,7 +158,7 @@ This project is open source and available under the MIT License.
 
 <div align="center">
 
-🎉 Thank you for checking out Smart Chessboard! 🎉
+🎉 Thank you for checking out ChessBotX! 🎉
 
 
 Made with ♟️ by Pritish Bhatasana
@@ -157,7 +171,9 @@ Made with ♟️ by Pritish Bhatasana
 
 Connect with me:
 
+
+GitHub: @Pritish3110
+LinkedIn: Pritish Bhatasana
 Email: pritishbhatasana68@gmail.com
-LinkedIn: www.linkedin.com/in/pritish3110
 
 </div>
