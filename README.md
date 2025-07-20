@@ -44,19 +44,12 @@ An embedded hardware + Python project that syncs a physical chessboard with a vi
 ChessBotX/
 
 ├── hardware/
-
 │   └── chessboard_scanner.ino     # ESP32 code for board scanning
-
 ├── software/
-
 │   ├── virtual_chess.py           # Main GUI application
-
 │   └── chess_simulator.py         # Chess game simulator
-
 ├── requirements.txt
-
 ├── LICENSE
-
 └── README.md
 
 
@@ -109,7 +102,7 @@ Contributions are welcome! Feel free to:
 
 ## 🆘 Troubleshooting
 
-# Common Issues
+### Common Issues
 
 🔌 ESP32 not detected → Check USB connection & drivers
 
