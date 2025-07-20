@@ -1,4 +1,4 @@
-#♟️ ChessBotX - Physical to Virtual Sync
+♟️ ChessBotX - Physical to Virtual Sync
 
 
 
@@ -15,7 +15,7 @@ An embedded hardware + Python project that syncs a physical chessboard with a vi
 
 
 
-#🎯 Overview
+🎯 Overview
 
 
 Hardware: ESP32 scans an 8x8 matrix with sensors/electromagnets to detect piece presence.
@@ -25,7 +25,7 @@ Software: Python + Pygame GUI renders the board, updates piece positions via ser
 
 
 
-#🛠️ Tech Stack
+🛠️ Tech Stack
 
 
 Hardware Components
@@ -48,7 +48,7 @@ Arduino IDE for ESP32 programming
 
 
 
-#✨ Features
+✨ Features
 
 
 🎮 Real-time board state sync
@@ -58,7 +58,7 @@ Arduino IDE for ESP32 programming
 
 
 
-#🔧 How It Works
+🔧 How It Works
 
 
 ESP32 scans the chessboard grid and detects presence using GPIO
@@ -67,7 +67,7 @@ Python reads matrix, detects movement, updates the GUI
 
 
 
-#📁 Project Structure
+📁 Project Structure
 
 
 ChessBotX/
@@ -86,7 +86,7 @@ ChessBotX/
 
 
 
-#🚀 Setup
+🚀 Setup
 
 
 Hardware Setup
